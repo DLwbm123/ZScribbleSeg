@@ -76,6 +76,8 @@ def get_args_parser():
     
     parser.add_argument('--dataset', default='ACDC_fold0', type=str,
                         help='multi-sequence CMR segmentation dataset')
+    parser.add_argument('--data_root', default='/root/data', type=str,
+                        help='multi-sequence CMR segmentation dataset')
     parser.add_argument('--output_dir', default='/root/ZScribble/ZScribbleSeg_ACDC/ZScribbleSeg_fold07/',
                         help='path where to save, empty for no saving')
     parser.add_argument('--device', default='cuda:2', type=str,

@@ -114,7 +114,7 @@ def make_transforms(image_set):
 
 
 def build(image_set, args):
-    root = Path('/root/ZScribble/data/' + args.dataset)
+    root = Path(args.data_root + args.dataset)
     PATHS = {
         "train": (root / "train" / "images", root / "train" / "labels"),
         "val": (root / "val" / "images", root / "val" / "labels"),
